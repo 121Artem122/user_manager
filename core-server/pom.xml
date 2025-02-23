@@ -31,8 +31,8 @@
 
         <!-- H2 Database для локальной базы данных -->
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
 
@@ -77,14 +77,6 @@
         </repository>
     </repositories>
 
-    <mirrors>
-        <mirror>
-            <id>central</id>
-            <mirrorOf>central</mirrorOf>
-            <url>https://repo.maven.apache.org/maven2</url>
-            <blocked>false</blocked>
-        </mirror>
-    </mirrors>
 
     <build>
         <plugins>
